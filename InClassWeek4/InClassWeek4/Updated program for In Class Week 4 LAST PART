@@ -1,0 +1,54 @@
+using System;
+
+namespace InClassWeek4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           double total = 0d;
+
+           string userInput;
+
+           string doContinue;
+
+           string display = "";
+
+           do
+
+           {
+
+              Console.Write("Enter next item (done to end): ");
+
+              userInput = Console.ReadLine();
+
+              Console.Write("Enter item amount: ");
+
+              double amount = double.Parse(Console.ReadLine());
+
+              total = total + amount;
+
+              display += userInput + "\t$" + Math.Round(amount, 2) + "\n";
+
+              Console.Write("Would you like to continue (y|n)? ");
+
+              doContinue = Console.ReadLine();
+
+            } while (doContinue != "n");
+
+            Console.WriteLine("-------------");
+
+            Console.WriteLine(display);
+
+            Console.WriteLine("Total\t$" + Math.Round(total, 2));
+
+            Console.WriteLine("Tax Amt\t$" + Math.Round(total * .07, 2));
+
+            Console.WriteLine("Total\t$" + Math.Round(total * 1.07, 2));
+     
+
+
+        }
+
+    }
+}
