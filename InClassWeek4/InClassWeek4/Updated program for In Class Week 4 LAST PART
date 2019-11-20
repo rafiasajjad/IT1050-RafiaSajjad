@@ -45,3 +45,10 @@ namespace InClassWeek4
             Console.WriteLine("Tax Amt\t$" + Math.Round(total * .07, 2));
 
             Console.WriteLine("Total\t$" + Math.Round(total * 1.07, 2));
+     
+
+
+        }
+
+    }
+}
