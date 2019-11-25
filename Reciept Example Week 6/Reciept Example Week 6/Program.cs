@@ -39,7 +39,7 @@ namespace Reciept_Example_Week_6
             Console.WriteLine("Total    \t" + total);
             Console.WriteLine("Tax Amount    \t" + (total * .07) );
             Console.WriteLine("Total w/ tax \t" + (total * 1.07) );
-            Console.WriteLine("**********************");
+            Console.WriteLine("**********************"); 
             /*
             user input number of items in the reciept 
             create an string array for the description of those items and an array for the amount of each item (double/decimal)
