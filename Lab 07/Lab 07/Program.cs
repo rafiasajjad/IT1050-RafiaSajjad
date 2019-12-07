@@ -9,7 +9,7 @@ namespace Lab_07
             Book book1 = new Book();
             book1.Display();
             BookTest book2 = new BookTest("Visual C#: How to Program", "Harvey Deitel, Paul Deitel", "2019");
-            book2.Display();
+            book2.Display2();
         }
     }
     
@@ -38,7 +38,7 @@ namespace Lab_07
             this.year = year;
         }
 
-        public void Display()
+        public void Display2()
         {
             Console.WriteLine($"{this.title}");  
             Console.WriteLine($"{this.author}");
